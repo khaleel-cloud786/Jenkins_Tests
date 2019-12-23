@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Connect Git') {
       steps {
-        git(url: 'https://github.com/khaleel-cloud786/Jenkins_Tests.git', branch: 'master', poll: true, credentialsId: 'khaleel-cloud786')
+        git(url: 'https://github.com/khaleel-cloud786/Jenkins_Tests', branch: 'master')
+        sh 'sh bashexample.sh'
       }
     }
 
