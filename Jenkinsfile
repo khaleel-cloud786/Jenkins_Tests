@@ -1,9 +1,8 @@
 pipeline {
   agent none
   stages {
-    stage('Connect Git') {
+    stage('Shell') {
       steps {
-        git(url: 'https://github.com/khaleel-cloud786/Jenkins_Tests', branch: 'master')
         sh 'sh bashexample.sh'
       }
     }
