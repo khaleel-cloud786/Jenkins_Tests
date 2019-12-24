@@ -1,0 +1,4 @@
+yum install -y python36;
+pip3 install termcolor;
+alias python=python3
+python  pythonexample.py
